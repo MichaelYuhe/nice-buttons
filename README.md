@@ -4,6 +4,9 @@ Create and Share Nice Buttons with Tailwind CSS.
 
 ## Contributing
 
+Currently I only add a few buttons, and it's really appreciated if you can help me add more buttons! 
+
+You can follow these steps to add a new button:
 - Create a new folder in `components/buttons` with the name of your button.
 - Code the style in `index.tsx`.
 - Add the metadata in `meta.ts`.
