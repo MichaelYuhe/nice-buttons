@@ -12,3 +12,5 @@ Create and Share Nice Buttons with Tailwind CSS.
 - Create a pull request with screenshots of your button.
 
 > If your button needs to use some client side event like listening to the click event, you should add `use client` in the top of `index.tsx` file.
+
+[![Deployed on Zeabur](https://zeabur.com/deployed-on-zeabur-dark.svg)](https://zeabur.com?referralCode=MichaelYuhe&utm_source=nice-buttons&utm_campaign=oss)
