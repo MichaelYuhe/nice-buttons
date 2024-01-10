@@ -47,41 +47,37 @@ export default async function Page({ params }: { params: { name: string } }) {
   )[Math.floor(Math.random() * (BUTTON_NAMES.length - 1))];
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <div className="flex h-full w-full max-w-6xl flex-col items-center justify-center">
-        <h1 className="mb-4 text-4xl font-bold">
-          {metadata.title?.toString()}
-        </h1>
+    <div className="mx-auto flex h-full w-full max-w-6xl flex-col items-center justify-center">
+      <h1 className="mb-4 text-4xl font-bold">{metadata.title?.toString()}</h1>
 
-        <h2 className="mb-8 text-lg font-semibold">
-          {metadata.description?.toString()}
-        </h2>
+      <h2 className="mb-8 text-lg font-semibold">
+        {metadata.description?.toString()}
+      </h2>
 
-        <div className="relative flex items-center justify-center gap-x-12">
-          <a href={`/buttons/${randomNextButtonName}`}>
-            <NiceButton>Next One</NiceButton>
-          </a>
+      <div className="relative flex items-center justify-center gap-x-12">
+        <a href={`/buttons/${randomNextButtonName}`}>
+          <NiceButton>Next One</NiceButton>
+        </a>
 
-          <Link
-            href={`https://github.com/michaelyuhe/nice-buttons/tree/main/components/buttons/${params.name}/index.tsx`}
-          >
-            <NiceButton>Show Code</NiceButton>
-          </Link>
+        <Link
+          href={`https://github.com/michaelyuhe/nice-buttons/tree/main/components/buttons/${params.name}/index.tsx`}
+        >
+          <NiceButton>Show Code</NiceButton>
+        </Link>
 
-          <Link href="https://github.com/michaelyuhe/nice-buttons/fork">
-            <NiceButton>Submit Your Button</NiceButton>
-          </Link>
-        </div>
-
-        {author && (
-          <span className="mt-12 flex items-center gap-x-2 font-semibold">
-            Submitted by
-            <a href={author?.url?.toString()}>
-              <h3 className="underline">{author?.name}</h3>
-            </a>
-          </span>
-        )}
+        <Link href="https://github.com/michaelyuhe/nice-buttons/fork">
+          <NiceButton>Submit Your Button</NiceButton>
+        </Link>
       </div>
+
+      {author && (
+        <span className="mt-12 flex items-center gap-x-2 font-semibold">
+          Submitted by
+          <a href={author?.url?.toString()}>
+            <h3 className="underline">{author?.name}</h3>
+          </a>
+        </span>
+      )}
     </div>
   );
 }

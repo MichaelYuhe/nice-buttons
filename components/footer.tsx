@@ -8,6 +8,7 @@ export default function Footer() {
           <img
             src="https://zeabur.com/deployed-on-zeabur-dark.svg"
             alt="zeabur"
+            className="h-[37px] w-[194px]"
           />
         </Link>
       </div>
