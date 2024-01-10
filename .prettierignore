@@ -1,0 +1,7 @@
+# ignore directories that are not source code
+node_modules
+dist
+pnpm-lock.yaml
+.vscode
+.DS_Store
+graphql
